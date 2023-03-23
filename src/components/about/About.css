@@ -1,0 +1,50 @@
+.about__container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 3rem;
+    align-items: stretch;
+}
+
+.about_left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.about_right .text{
+    font-family: var(--paragraph-font);
+    line-height: 24px;
+}
+.about_info_title span{
+    font-size: var(--normal-font-size);
+    text-transform: uppercase;
+    font-weight: var(--font-medium);
+    letter-spacing: 1px;
+}
+.about_info_title h3{
+    font-size: var(--h2-font-size);
+    margin: 1rem 0;
+    font-weight: var(--font-semi-bold);
+}
+
+/* .signature{
+    margin: 1rem 0;
+} */
+
+.about_buttons{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .about__container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 3rem;
+        align-items: stretch;
+    }
+}

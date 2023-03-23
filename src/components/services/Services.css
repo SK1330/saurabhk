@@ -1,0 +1,111 @@
+.service__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.service-box {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 50px;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    overflow: hidden;
+}
+
+.service-box:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border-radius: 12px;
+    background: #efebf8;
+}
+
+.service-box:hover:before {
+    border-radius: 12px;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.service-box i {
+    font-size: 48px;
+    line-height: 48px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.service-box img {
+    margin-bottom: 25px;
+    width: 48px;
+}
+
+.service-heading {
+    margin-bottom: 20px;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+}
+
+.service-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 26px;
+    line-height: 26px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    margin: 0;
+    padding: 0;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.service-box:hover .service-number {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    top: 30px;
+    right: 30px;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .service__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+    .service__container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {}
