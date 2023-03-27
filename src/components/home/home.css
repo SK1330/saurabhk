@@ -145,7 +145,22 @@
 }
 
 /* For medium devices */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .short_skills{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1rem;
+    }
+    .short_skills .text{
+        border-right: none;
+        border-bottom: 1px solid rgba(45, 46, 50, .5);
+    }
+
+    .short_skills_icons ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
 @media screen and (max-width: 576px) {
     .service__container {
