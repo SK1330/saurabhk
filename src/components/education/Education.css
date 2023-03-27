@@ -70,7 +70,7 @@
 
 .timeline-item:hover .timeline-title::after,
 .timeline-item:hover .timeline-title::before {
-    background-color: #6138bd;
+    background-color: var(--title-color-dark);
 }
 
 @media screen and (max-width: 992px) {

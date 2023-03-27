@@ -39,7 +39,7 @@
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     border-radius: 12px;
-    background: #efebf8;
+    background: #f3f3f3;
 }
 
 .service-box:hover:before {
@@ -104,6 +104,9 @@
     .service__container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .service-box{
+        margin-bottom: 0;
     }
 }
 

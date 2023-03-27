@@ -38,6 +38,7 @@
     width: 38px;
     height: 38px;
     margin-left: 0.4rem;
+    display: inline-block;
 }
 
 .home__subtitle {
@@ -64,7 +65,7 @@
 }
 
 .home__img {
-    background: url(../../assets/profile.jpg);
+    background: url(../../assets/selfimage_2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -146,26 +147,50 @@
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
+
+    #home{
+        padding-top: 3rem;
+    }
+
+    .home__title{
+        font-size: 2.2rem;
+    }
+    svg{
+        display: inline-block;
+    }
+
     .short_skills{
         flex-direction: column;
         align-items: flex-start;
-        row-gap: 1rem;
+        row-gap: 2rem;
     }
     .short_skills .text{
         border-right: none;
+        padding-right: 0;
         border-bottom: 1px solid rgba(45, 46, 50, .5);
     }
 
     .short_skills_icons ul{
         display: flex;
         flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
     }
+    .short_skills_icons ul li{
+        margin: 0;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
     .service__container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .home__hand{
+        width: 2rem;
+        height: 2rem;
     }
 }
 

@@ -1,8 +1,10 @@
 import React from "react";
 import htmlimage from "../../assets/html.svg";
 import cssimage from "../../assets/css.svg";
-import javascriptimage from "../../assets/bootstrap.svg";
-import reactimage from "../../assets/angular.svg";
+import javascriptimage from "../../assets/icons8-javascript.svg";
+import reactimage from "../../assets/icons8-react-native.svg";
+import figmaImage from "../../assets/icons8-figma.svg"
+import bootstrapImage from "../../assets/icons8-bootstrap.svg"
 
 const Techstack = () => {
   return (
@@ -25,6 +27,12 @@ const Techstack = () => {
           </li>
           <li>
             <img className="svg" src={reactimage} alt="reactimage" />
+          </li>
+          <li>
+            <img className="svg" src={bootstrapImage} alt="bootstrapimage" />
+          </li>
+          <li>
+            <img className="svg" src={figmaImage} alt="figmaimage" />
           </li>
         </ul>
       </div>
