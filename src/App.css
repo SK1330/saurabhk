@@ -178,10 +178,11 @@ img {
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
-  /* .container {
+  .container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
-  } */
+  }
+  
 
   .button {
     padding: 0.5rem 1rem;
@@ -205,6 +206,10 @@ img {
 
   .section__subtitle {
     margin-bottom: var(--mb-3);
+  }
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
