@@ -60,7 +60,15 @@ nav {
     }
 
     nav {
-        height: var(--header-height);
+        height: 4rem;
+    }
+    .nav_logo{
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .nav.container{
+        padding-left: 1.2rem;
+        padding-right: 1.3rem;
     }
 
     .nav_menu {
@@ -94,7 +102,7 @@ nav {
         position: absolute;
         right: 1.3rem;
         bottom: .5rem;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         cursor: pointer;
         color: var(--title-color);
     }
@@ -104,7 +112,7 @@ nav {
     }
 
     .nav__toggle {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         cursor: pointer;
     }
 

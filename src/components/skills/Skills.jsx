@@ -125,10 +125,6 @@ const Skills = () => {
           </li>
         </ul>
         <ul className="skills_grid left-right">
-          
-         
-          
-
           <li className="skills-grid-item ">
             <img className="skillIcons" src={terminalIcon} alt="" />
             <h3 className="skills_title">Linux</h3>

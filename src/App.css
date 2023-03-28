@@ -156,7 +156,7 @@ img {
   display: inline-block;
   background-color: var(--title-color-dark);
   color: var(--container-color);
-  padding: 0.6rem 1.2rem;
+  padding: 0.6rem 1.8rem;
   border-radius: 2rem;
   font-weight: var(--font-medium);
 }
@@ -179,13 +179,13 @@ img {
 /* For large devices */
 @media screen and (max-width: 992px) {
   .container {
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
+    padding-left: var(--mb-1-5);
+    padding-right: var(--mb-1-5);
   }
   
 
   .button {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
   }
 
   .button__icon {
