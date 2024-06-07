@@ -8,7 +8,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index. html" className="nav_logo">
-          Saurabh.dev
+          Saurabh.developer
         </a>
         <div className={Toggle ? "nav_menu show_menu" : "nav_menu"}>
           <ul className="nav__list grid">
